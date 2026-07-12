@@ -14,32 +14,25 @@ document.addEventListener('DOMContentLoaded', () => {
             const name = formData.get('name');
             const email = formData.get('email');
 
-            // 2. Here you would typically send the data to your autoresponder (e.g., via fetch)
-            // Example:
-            /*
-            fetch('YOUR_WEBHOOK_OR_API_URL', {
+            // 2. Send the data to your API endpoint
+            fetch('/api/subscribe', {
                 method: 'POST',
-                body: JSON.stringify({ name, email }),
+                body: JSON.stringify({ name, email, landing_page: 'quantcai' }),
                 headers: { 'Content-Type': 'application/json' }
-            }).then(() => {
-                window.location.href = AFFILIATE_LINK;
+            }).then(response => response.json())
+            .then(data => {
+                console.log(`Lead Captured: ${name} (${email})`, data);
             }).catch(err => {
-                console.error(err);
-                // Redirect anyway so we don't lose the sale
+                console.error('Error capturing lead:', err);
+            }).finally(() => {
+                // Fire Meta Pixel Lead Event
+                if (typeof fbq === 'function') {
+                    fbq('track', 'Lead');
+                }
+
+                // 3. Redirect to affiliate offer
                 window.location.href = AFFILIATE_LINK;
             });
-            */
-
-            // For now, we simulate capturing the lead and redirect immediately
-            console.log(`Lead Captured: ${name} (${email})`);
-            
-            // Fire Meta Pixel Lead Event
-            if (typeof fbq === 'function') {
-                fbq('track', 'Lead');
-            }
-
-            // 3. Redirect to affiliate offer
-            window.location.href = AFFILIATE_LINK;
         });
     });
 

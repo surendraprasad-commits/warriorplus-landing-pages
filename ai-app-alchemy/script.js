@@ -46,23 +46,32 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.textContent = "Processing...";
         submitBtn.style.opacity = '0.8';
 
-        // ---------------------------------------------------------
-        // TODO: INTEGRATE EMAIL CAPTURE HERE
-        // If you use an autoresponder (like Mailchimp, GetResponse),
-        // you would normally send an AJAX/fetch request to their API 
-        // or a webhook here with the `name` and `email` variables.
-        // ---------------------------------------------------------
-        
-        console.log(`Captured Lead -> Name: ${name}, Email: ${email}`);
-
-        // Fire Meta Pixel Lead Event
-        if (typeof fbq === 'function') {
-            fbq('track', 'Lead');
-        }
-
-        // Simulate network delay for effect, then redirect to affiliate link
-        setTimeout(() => {
+        // POST to /api/subscribe endpoint
+        fetch('/api/subscribe', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ 
+                name: name, 
+                email: email, 
+                landing_page: 'ai-app-alchemy' 
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Lead captured successfully:', data);
+        })
+        .catch(error => {
+            console.error('Error capturing lead:', error);
+        })
+        .finally(() => {
+            // Fire Meta Pixel Lead Event
+            if (typeof fbq === 'function') {
+                fbq('track', 'Lead');
+            }
+            // Redirect to affiliate link
             window.location.href = AFFILIATE_LINK;
-        }, 800);
+        });
     });
 });

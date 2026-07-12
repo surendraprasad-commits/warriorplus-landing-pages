@@ -54,12 +54,28 @@ document.addEventListener('DOMContentLoaded', () => {
             fbq('track', 'Lead');
         }
 
-        // Simulate API call to save email to autoresponder, then redirect
-        setTimeout(() => {
+        const formData = new FormData(form);
+        const name = formData.get('fname') || '';
+        const email = formData.get('email') || '';
+
+        // Real API call to save email to Neon DB, then redirect
+        fetch('/api/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                name: name, 
+                email: email, 
+                landing_page: 'human-ai-force' 
+            })
+        })
+        .then(response => response.json())
+        .then(data => console.log('Lead captured successfully:', data))
+        .catch(err => console.error('Error capturing lead:', err))
+        .finally(() => {
             // Placeholder for WarriorPlus Affiliate Link
             const affiliateLink = "https://warriorplus.com/o2/a/k5p7my6/0"; 
             window.location.href = affiliateLink;
-        }, 1500);
+        });
     };
 
     document.getElementById('optin-form-1').addEventListener('submit', handleFormSubmit);

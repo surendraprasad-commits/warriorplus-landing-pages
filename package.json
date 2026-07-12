@@ -1,0 +1,24 @@
+{
+  "name": "warriorplus-landing-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surendraprasad-commits/warriorplus-landing-pages.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/surendraprasad-commits/warriorplus-landing-pages/issues"
+  },
+  "homepage": "https://github.com/surendraprasad-commits/warriorplus-landing-pages#readme",
+  "dependencies": {
+    "pg": "^8.22.0"
+  }
+}
