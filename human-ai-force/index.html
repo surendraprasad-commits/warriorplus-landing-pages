@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Human AI Force - Deploy Lifelike AI Agents</title>
-    <meta name="description" content="Discover how to deploy lifelike AI agents that work 24/7 to engage leads and support customers in under 60 seconds.">
-    
-    <!-- Open Graph Meta Tags for Meta Ads -->
-    <meta property="og:title" content="Human AI Force - Deploy Lifelike AI Agents">
-    <meta property="og:description" content="Discover how to deploy lifelike AI agents that work 24/7 to engage leads and support customers in under 60 seconds.">
+    <title>Human AI Force — Deploy Lifelike AI Agents in 60 Seconds | Exclusive Bonuses</title>
+    <meta name="description" content="Deploy hyper-realistic AI agents that sell, support, and scale your business 24/7. No coding needed. No monthly fees. Get instant access + exclusive bonuses.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Deploy Lifelike AI Agents in 60 Seconds — No Coding Required">
+    <meta property="og:description" content="Stop losing customers while you sleep. Deploy AI agents that handle sales, support, and lead capture automatically.">
     <meta property="og:type" content="website">
-    
+    <meta property="og:image" content="human_ai_force_video_thumbnail_1783855307747.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Deploy Lifelike AI Agents in 60 Seconds">
+    <meta name="twitter:description" content="No coding. No monthly fees. Deploy AI that sells and supports your business 24/7.">
+
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -29,225 +35,509 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="announcement-bar">
-        <div class="container">
-            🔥 Attention US & Canada: Limited Time $2 Coupon Available. <span class="countdown">Expires in: <span id="timer">10:00</span></span>
+
+    <!-- ===== URGENCY BAR ===== -->
+    <div class="urgency-bar" id="urgency-bar">
+        <div class="urgency-inner">
+            <span class="urgency-icon">🔥</span>
+            <span class="urgency-text"><strong>LAUNCH SPECIAL:</strong> One-Time Price Ending Soon</span>
+            <span class="urgency-timer">
+                <span id="timer-hours">00</span>:<span id="timer-minutes">00</span>:<span id="timer-seconds">00</span>
+            </span>
         </div>
     </div>
 
-    <div class="background-effects">
+    <!-- ===== BACKGROUND EFFECTS ===== -->
+    <div class="bg-effects" aria-hidden="true">
+        <div class="bg-gradient"></div>
+        <div class="bg-grid"></div>
         <div class="glow-orb orb-1"></div>
         <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
     </div>
 
+    <!-- ===== HEADER ===== -->
     <header class="header">
         <div class="container">
-            <div class="logo">HUMAN <span>AI</span> FORCE</div>
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                HUMAN <span class="logo-accent">AI</span> FORCE
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="hero">
             <div class="container">
-                <p class="pre-headline">ATTENTION: Business Owners, Agencies, and Affiliate Marketers...</p>
-                <h1 class="main-headline">
-                    Discover How To Deploy "Lifelike" AI Agents That Work 24/7 To Engage Leads & Support Customers — <span class="highlight">In Under 60 Seconds.</span>
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Used by 500+ Businesses Worldwide</span>
+                </div>
+
+                <h1 class="hero-headline">
+                    Stop Losing Customers While You Sleep — Deploy
+                    <span class="gradient-text">Lifelike AI Agents</span>
+                    That Sell, Support &amp; Scale Your Business
+                    <span class="highlight-box">In 60 Seconds</span>
                 </h1>
-                <p class="sub-headline">No technical skills required. Stop losing sales while you sleep and let intelligent, customizable automation handle the heavy lifting for your business.</p>
 
-                <div class="vsl-wrapper fade-in-up">
-                    <div class="vsl-container">
-                        <style>
-                            .mute-toggle-btn {
-                                position: absolute;
-                                top: 20px;
-                                right: 20px;
-                                z-index: 20;
-                                background: rgba(0,0,0,0.7);
-                                color: white;
-                                border: 1px solid rgba(255,255,255,0.3);
-                                padding: 10px 20px;
-                                border-radius: 8px;
-                                cursor: pointer;
-                                font-weight: bold;
-                                opacity: 0;
-                                transition: opacity 0.3s ease;
-                                pointer-events: none;
-                            }
-                            .vsl-container:hover .mute-toggle-btn {
-                                opacity: 1;
-                                pointer-events: auto;
-                            }
-                        </style>
-                        <video 
-                            id="promo-video"
-                            autoplay
-                            muted
-                            loop
-                            playsinline
-                            poster="human_ai_force_video_thumbnail_1783855307747.png" 
-                            style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 16px; object-fit: cover; border: none; outline: none; pointer-events: none;">
-                            <source src="Initial_Scene_-_2026-07-12_202607121817.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <button id="mute-toggle" class="mute-toggle-btn pulse">🔇 Unmute</button>
-                        <script>
-                            var video = document.getElementById('promo-video');
-                            var muteBtn = document.getElementById('mute-toggle');
-                            
-                            // Ensure it starts muted for autoplay compliance
-                            video.muted = true;
+                <p class="hero-sub">
+                    No coding skills needed. No monthly fees. No learning curve.
+                    Just deploy, connect, and watch your business run on autopilot.
+                </p>
 
-                            muteBtn.addEventListener('click', function() {
-                                video.muted = !video.muted;
-                                if (video.muted) {
-                                    muteBtn.innerText = '🔇 Unmute';
-                                    muteBtn.classList.add('pulse');
-                                } else {
-                                    muteBtn.innerText = '🔊 Mute';
-                                    muteBtn.classList.remove('pulse');
-                                }
-                            });
-                        </script>
+                <!-- Primary Opt-in Card -->
+                <div class="optin-card glass-card" id="main-optin">
+                    <div class="optin-header">
+                        <span class="optin-badge">🎁 EXCLUSIVE OFFER</span>
+                        <h2>Claim Your Access + Free Bonuses</h2>
+                        <p>Get the live demo + our AI Automation Playbook + an exclusive <strong>$2 OFF</strong> coupon — all free.</p>
                     </div>
+                    <form id="optin-form-hero" class="optin-form" autocomplete="on">
+                        <div class="form-row">
+                            <input type="text" id="hero-fname" name="fname" placeholder="Your First Name" required autocomplete="given-name">
+                        </div>
+                        <div class="form-row">
+                            <input type="email" id="hero-email" name="email" placeholder="Your Best Email" required autocomplete="email">
+                        </div>
+                        <button type="submit" class="cta-btn primary-cta" id="hero-submit-btn">
+                            <span class="cta-text">🔓 UNLOCK INSTANT ACCESS + FREE BONUSES</span>
+                            <span class="cta-arrow">→</span>
+                        </button>
+                        <div class="form-trust">
+                            <span>🔒 256-bit encrypted</span>
+                            <span class="trust-sep">•</span>
+                            <span>No spam, ever</span>
+                            <span class="trust-sep">•</span>
+                            <span>Unsubscribe anytime</span>
+                        </div>
+                    </form>
                 </div>
 
-                <div class="optin-box glass-effect fade-in-up" style="animation-delay: 0.3s;">
-                    <h2>Want To See Exactly How This Works?</h2>
-                    <p>Enter your info below to watch the live demo and unlock an exclusive <strong>$2 OFF Coupon</strong> + our free "AI Automation Playbook"!</p>
-                    
-                    <form id="optin-form-1" class="optin-form">
-                        <div class="input-group">
-                            <input type="text" id="fname1" name="fname" placeholder="First Name" required>
-                        </div>
-                        <div class="input-group">
-                            <input type="email" id="email1" name="email" placeholder="Best Email Address" required>
-                        </div>
-                        <button type="submit" class="cta-button pulse">👉 Yes! Give Me The Insider Offer 👈</button>
-                        <p class="secure-text">🔒 Your information is 100% secure. You will be redirected to the official presentation immediately.</p>
-                    </form>
+                <!-- Trust Indicators -->
+                <div class="hero-trust">
+                    <div class="trust-item"><span class="trust-icon">🛡️</span><span>30-Day Money Back</span></div>
+                    <div class="trust-item"><span class="trust-icon">⚡</span><span>Instant Access</span></div>
+                    <div class="trust-item"><span class="trust-icon">💰</span><span>$0/Month Forever</span></div>
                 </div>
             </div>
         </section>
 
-        <section class="trust-section">
+        <!-- ===== PROBLEM SECTION (PAS Framework) ===== -->
+        <section class="problem-section" id="problem">
             <div class="container">
-                <p class="trust-title">TRUSTED BY 10,000+ BUSINESSES GLOBALLY</p>
-                <div class="trust-badges">
-                    <div class="badge">🔒 256-Bit Secure Checkout</div>
-                    <div class="badge">🛡️ 30-Day Money Back Guarantee</div>
-                    <div class="badge">⭐ 4.9/5 Average Rating</div>
-                </div>
-            </div>
-        </section>
+                <div class="section-tag scroll-reveal">THE PROBLEM</div>
+                <h2 class="section-headline scroll-reveal">Does Any Of This Sound Familiar?</h2>
 
-        <section class="problem-section">
-            <div class="container content-wrapper scroll-reveal">
-                <p>If you're tired of answering the same customer questions, paying expensive virtual assistants, or watching hot leads slip away because you couldn't reply fast enough... <strong>you are not alone.</strong></p>
-                <p>Most business owners are trapped working <em>in</em> their business instead of <em>on</em> it.</p>
-                <p>You know you need automation to scale, but hiring staff is expensive, and most AI chatbots are clunky, frustrating, and sound like robots.</p>
-                <p>But what if you could instantly clone your best salesperson, customer support rep, or coach—and have them work around the clock without ever asking for a coffee break?</p>
-                
-                <div class="button-wrapper">
-                    <button class="cta-button scroll-to-form">👉 Yes! Give Me The Insider Offer 👈</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="solution-section">
-            <div class="container content-wrapper scroll-reveal">
-                <h2>Enter The Era of Hyper-Realistic AI Agents</h2>
-                <p>We recently discovered a groundbreaking new platform that allows anyone to create highly intelligent, human-like AI agents in minutes.</p>
-                <p>This isn't just a basic chatbot. These are fully customized, brandable AI assistants that you can actually <em>train</em> with your own website, PDFs, and documents so they know your business inside and out.</p>
-                
-                <div class="benefits-box glass-effect">
-                    <h3>Here is how this system gives you an unfair advantage:</h3>
-                    <ul class="benefits-list">
-                        <li><span class="icon">✅</span> <strong>Deploy in 60 Seconds:</strong> Choose from 60+ pre-trained agents for almost every niche (Real Estate, E-commerce, Coaching, etc.) or build your own from scratch.</li>
-                        <li><span class="icon">✅</span> <strong>Zero Monthly Fees:</strong> Say goodbye to expensive API costs or hidden monthly subscriptions. (This is a game-changer).</li>
-                        <li><span class="icon">✅</span> <strong>Instantly Trainable AI:</strong> Turn your AI into a sales expert, consultant, or customer support rep just by feeding it a URL or document.</li>
-                        <li><span class="icon">✅</span> <strong>Collect Unlimited Leads:</strong> Engage visitors naturally and capture leads through advanced forms, feedback surveys, and interactive popups.</li>
-                        <li><span class="icon">✅</span> <strong>100% Customizable:</strong> Match your brand perfectly by customizing your AI's appearance, tone, and behavior.</li>
-                    </ul>
-                </div>
-
-                <div class="button-wrapper">
-                    <button class="cta-button scroll-to-form">👉 Yes! Give Me The Insider Offer 👈</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="bonus-section">
-            <div class="container content-wrapper scroll-reveal">
-                <h2>Start Your Own AI Agency (Commercial License Included)</h2>
-                <p>Not only can you use this to automate your own operations, but right now, early adopters are getting a <strong>Free Commercial License</strong>.</p>
-                <p>That means you can create and deploy these AI agents for clients and keep 100% of the profits. Whether you want to streamline your current business or build a lucrative AI automation agency, the timing has never been better.</p>
-            </div>
-        </section>
-
-        <section class="testimonials-section">
-            <div class="container content-wrapper scroll-reveal">
-                <h2>Don't Just Take Our Word For It...</h2>
-                <div class="testimonial-grid">
-                    <div class="testimonial-card glass-effect">
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <p class="quote">"I set up an AI agent for my real estate agency in Canada and within 48 hours it booked 3 listing appointments while I was sleeping. Completely game-changing!"</p>
-                        <p class="author">— Mark T., Toronto, ON</p>
+                <div class="pain-grid scroll-reveal">
+                    <div class="pain-card">
+                        <span class="pain-icon">😤</span>
+                        <p>You're <strong>glued to your inbox</strong> answering the same 10 questions every single day</p>
                     </div>
-                    <div class="testimonial-card glass-effect">
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <p class="quote">"Finally, an AI that doesn't sound like a robot. My e-commerce conversions in the US have gone up 34% because the AI answers product questions instantly."</p>
-                        <p class="author">— Sarah J., Austin, TX</p>
+                    <div class="pain-card">
+                        <span class="pain-icon">💸</span>
+                        <p>Hot leads go <strong>cold</strong> because you couldn't respond within 5 minutes</p>
                     </div>
-                    <div class="testimonial-card glass-effect">
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <p class="quote">"As an affiliate marketer, I needed something fast. Deployed this in 60 seconds and it's already handling all my tier-1 traffic objections. Highly recommended."</p>
-                        <p class="author">— David L., Miami, FL</p>
+                    <div class="pain-card">
+                        <span class="pain-icon">🤖</span>
+                        <p>You've tried chatbots before — they sounded like <strong>broken robots</strong> and embarrassed your brand</p>
+                    </div>
+                    <div class="pain-card">
+                        <span class="pain-icon">💳</span>
+                        <p>Hiring VAs costs <strong>$500–$2,000/month</strong> and they STILL make mistakes</p>
                     </div>
                 </div>
+
+                <div class="agitation-block scroll-reveal">
+                    <p>Every minute without automation is <strong>money left on the table.</strong></p>
+                    <p class="agitation-highlight">And the worst part? <em>Your competitors are already using AI.</em></p>
+                </div>
             </div>
         </section>
 
-        <section class="final-cta-section">
-            <div class="container scroll-reveal">
-                <h2>See It To Believe It...</h2>
-                <p>Ready to see how easy it is to launch your first lifelike AI Agent?</p>
-                <p>Enter your name and email below. You'll be immediately redirected to the official video presentation, where you can watch the software in action.</p>
-                <p>Plus, as a thank you, we'll instantly email you a special <strong>$2 discount coupon ("AIFORCE2")</strong> to use if you decide this tool is right for you.</p>
+        <!-- ===== SOLUTION SECTION ===== -->
+        <section class="solution-section" id="solution">
+            <div class="container">
+                <div class="section-tag scroll-reveal">THE SOLUTION</div>
+                <h2 class="section-headline scroll-reveal">
+                    What If You Could Clone Your Best Employee...
+                    <span class="gradient-text">In 60 Seconds?</span>
+                </h2>
+                <p class="section-sub scroll-reveal">
+                    Human AI Force is a breakthrough platform that lets <em>anyone</em> create hyper-realistic,
+                    fully brandable AI agents — trained on YOUR business data — without writing a single line of code.
+                </p>
 
-                <div class="optin-box glass-effect">
-                    <form id="optin-form-2" class="optin-form">
-                        <div class="input-group">
-                            <input type="text" id="fname2" name="fname" placeholder="First Name" required>
+                <!-- Video Demo (Click to Play) -->
+                <div class="demo-wrapper scroll-reveal">
+                    <div class="demo-container" id="demo-container">
+                        <img src="human_ai_force_video_thumbnail_1783855307747.png" alt="Human AI Force Demo Preview" class="demo-poster" id="demo-poster" loading="lazy">
+                        <div class="demo-overlay" id="demo-overlay">
+                            <div class="play-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"></polygon></svg>
+                            </div>
+                            <span class="demo-label">▶ Watch 2-Min Demo</span>
                         </div>
-                        <div class="input-group">
-                            <input type="email" id="email2" name="email" placeholder="Best Email Address" required>
+                    </div>
+                </div>
+
+                <!-- Feature Grid -->
+                <div class="feature-grid scroll-reveal">
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Hyper-Realistic Conversations</h3>
+                        <p>AI agents that sound human — not robotic. Your customers won't know the difference.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">🌍</div>
+                        <h3>100+ Languages Supported</h3>
+                        <p>Serve customers globally with AI that speaks their language — automatically.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>White-Label Branding</h3>
+                        <p>Fully customize appearance, tone, personality, and behavior to match your brand.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Built-In Lead Capture</h3>
+                        <p>Collect leads, feedback, and survey responses through interactive AI conversations.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>60-Second Deployment</h3>
+                        <p>Choose from 60+ pre-trained agents or build your own. Go live in under a minute.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Train With Your Data</h3>
+                        <p>Feed it your website URL, PDFs, or docs — it becomes an expert on YOUR business.</p>
+                    </div>
+                </div>
+
+                <div class="cta-wrapper scroll-reveal">
+                    <button class="cta-btn primary-cta scroll-to-form" id="solution-cta">
+                        <span class="cta-text">👉 YES! I WANT THIS FOR MY BUSINESS</span>
+                        <span class="cta-arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== STATS SECTION ===== -->
+        <section class="stats-section" id="stats">
+            <div class="container">
+                <div class="stats-grid scroll-reveal">
+                    <div class="stat-card">
+                        <div class="stat-display">
+                            <span class="stat-number" data-target="500">0</span>
+                            <span class="stat-suffix">+</span>
                         </div>
-                        <button type="submit" class="cta-button pulse">👉 Yes! Give Me The Insider Offer 👈</button>
-                        <p class="secure-text">🔒 100% Secure. Zero Risk.</p>
-                    </form>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-display">
+                            <span class="stat-number" data-target="60">0</span>
+                            <span class="stat-suffix">sec</span>
+                        </div>
+                        <div class="stat-label">Setup Time</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-display">
+                            <span class="stat-prefix">$</span>
+                            <span class="stat-number" data-target="0">0</span>
+                            <span class="stat-suffix">/mo</span>
+                        </div>
+                        <div class="stat-label">Monthly Fees</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-display">
+                            <span class="stat-number" data-target="100">0</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Languages</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BONUS STACK SECTION ===== -->
+        <section class="bonus-section" id="bonuses">
+            <div class="container">
+                <div class="section-tag scroll-reveal">EXCLUSIVE BONUSES</div>
+                <h2 class="section-headline scroll-reveal">
+                    🎁 Get Access Through This Page &amp; Receive
+                    <span class="gradient-text">$688 In Free Bonuses</span>
+                </h2>
+                <p class="section-sub scroll-reveal">These bonuses are ONLY available when you access Human AI Force through this page. You won't find them anywhere else.</p>
+
+                <div class="bonus-grid scroll-reveal">
+                    <div class="bonus-card glass-card">
+                        <div class="bonus-tag">BONUS #1</div>
+                        <div class="bonus-value">Value: $197</div>
+                        <h3>📘 AI Automation Playbook</h3>
+                        <p>The complete step-by-step guide to deploying AI agents in any niche — from real estate to e-commerce to coaching.</p>
+                    </div>
+                    <div class="bonus-card glass-card">
+                        <div class="bonus-tag">BONUS #2</div>
+                        <div class="bonus-value">Value: $297</div>
+                        <h3>📋 60 Ready-Made Agent Templates</h3>
+                        <p>Pre-built, plug-and-play AI agent configurations for every major industry. Just import and deploy.</p>
+                    </div>
+                    <div class="bonus-card glass-card">
+                        <div class="bonus-tag">BONUS #3</div>
+                        <div class="bonus-value">Value: $147</div>
+                        <h3>🎯 Priority Setup Assistance</h3>
+                        <p>Get personal help setting up your first AI agent. We'll walk you through every step to ensure success.</p>
+                    </div>
+                    <div class="bonus-card glass-card">
+                        <div class="bonus-tag">BONUS #4</div>
+                        <div class="bonus-value">Value: $47</div>
+                        <h3>🏷️ Exclusive $2 OFF Coupon</h3>
+                        <p>Use coupon code <strong>"AIFORCE2"</strong> at checkout for an instant discount — only available through this page.</p>
+                    </div>
+                </div>
+
+                <div class="bonus-total glass-card scroll-reveal">
+                    <div class="bonus-total-row">
+                        <span>Total Bonus Value:</span>
+                        <span class="bonus-total-value"><s>$688</s></span>
+                    </div>
+                    <div class="bonus-total-row highlight-row">
+                        <span>Your Price Today:</span>
+                        <span class="bonus-total-free">FREE</span>
+                    </div>
+                    <p class="bonus-total-note">Included automatically when you get access through this page</p>
+                </div>
+
+                <div class="cta-wrapper scroll-reveal">
+                    <button class="cta-btn primary-cta scroll-to-form" id="bonus-cta">
+                        <span class="cta-text">🎁 CLAIM MY FREE BONUSES + ACCESS NOW</span>
+                        <span class="cta-arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS SECTION ===== -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-tag scroll-reveal">REAL RESULTS</div>
+                <h2 class="section-headline scroll-reveal">What Early Adopters Are Saying...</h2>
+
+                <div class="testimonial-grid scroll-reveal">
+                    <div class="testimonial-card glass-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #4f8cff, #8b5cf6);">MT</div>
+                            <div>
+                                <div class="testimonial-name">Mark T.</div>
+                                <div class="testimonial-role">Real Estate Agent • Toronto, ON 🇨🇦</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"I set up an AI agent for my agency and within <strong>48 hours it booked 3 listing appointments</strong> while I was sleeping. This is completely game-changing."</p>
+                    </div>
+                    <div class="testimonial-card glass-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #10b981, #059669);">SJ</div>
+                            <div>
+                                <div class="testimonial-name">Sarah J.</div>
+                                <div class="testimonial-role">E-Commerce Owner • Austin, TX 🇺🇸</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"My conversions went up <strong>34%</strong> because the AI answers product questions instantly. Finally, an AI that doesn't sound like a robot."</p>
+                    </div>
+                    <div class="testimonial-card glass-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar" style="background: linear-gradient(135deg, #f59e0b, #ea580c);">DL</div>
+                            <div>
+                                <div class="testimonial-name">David L.</div>
+                                <div class="testimonial-role">Digital Marketer • Miami, FL 🇺🇸</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"Deployed in <strong>60 seconds flat</strong>. Now it handles all my customer objections automatically. I've freed up 4+ hours every day."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ SECTION ===== -->
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-tag scroll-reveal">GOT QUESTIONS?</div>
+                <h2 class="section-headline scroll-reveal">Frequently Asked Questions</h2>
+
+                <div class="faq-list scroll-reveal">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Is there REALLY no monthly fee?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes — during this launch period, Human AI Force is available as a <strong>one-time payment</strong>. No recurring charges, no hidden API costs, no surprises. Once you're in, you're in for life. After the launch ends, the creator plans to switch to a monthly subscription model, so now is the best time to lock in lifetime access.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do I need any technical or coding skills?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely not. Human AI Force was designed for non-technical users. Everything is point-and-click. You can deploy a fully functional AI agent in under 60 seconds by choosing from 60+ pre-built templates. If you can browse the internet, you can use this tool.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>What if it doesn't work for my specific niche?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The platform includes 60+ pre-trained agent templates covering virtually every industry — real estate, e-commerce, coaching, healthcare, SaaS, restaurants, and more. Plus, you can train the AI on YOUR specific data (website URL, PDFs, docs) to make it an expert on your exact business.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Is there a money-back guarantee?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. Human AI Force comes with a <strong>30-day money-back guarantee</strong>. If you're not completely satisfied, simply request a refund within 30 days — no questions asked. You have absolutely zero risk.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How is this different from ChatGPT or basic chatbots?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>ChatGPT is a general-purpose AI. Human AI Force creates <strong>specialized, branded AI agents</strong> trained specifically on YOUR business data. They can capture leads, book appointments, handle support tickets, and integrate into your website. Plus, they're white-labelable — your clients will never know it's AI.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Can I use this to start an AI agency and charge clients?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! Early adopters receive a <strong>Free Commercial License</strong>. This means you can create and deploy AI agents for clients and charge them $500–$2,000+ per setup. Many users are building profitable AI automation agencies using Human AI Force as their primary tool.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FINAL CTA SECTION ===== -->
+        <section class="final-section" id="final-cta">
+            <div class="container">
+                <div class="final-content scroll-reveal">
+                    <h2 class="section-headline">⏰ The Launch Window Is Closing...</h2>
+                    <p class="final-warning">
+                        Human AI Force is currently available at a <strong>one-time launch price</strong>.
+                        Once the launch period ends, this switches to a <strong>monthly subscription</strong>.
+                        Lock in your lifetime access now — before the price goes up permanently.
+                    </p>
+
+                    <div class="guarantee-box">
+                        <div class="guarantee-badge">🛡️</div>
+                        <div>
+                            <strong>30-Day Iron-Clad Money-Back Guarantee</strong>
+                            <p>If you're not blown away by what Human AI Force can do for your business, simply request a refund within 30 days. No questions asked. Zero risk.</p>
+                        </div>
+                    </div>
+
+                    <div class="optin-card glass-card" id="final-optin">
+                        <h2>Get Started Now — It Takes 10 Seconds</h2>
+                        <p>Enter your details below. You'll be immediately redirected to the official presentation + receive your bonuses via email.</p>
+                        <form id="optin-form-final" class="optin-form" autocomplete="on">
+                            <div class="form-row">
+                                <input type="text" id="final-fname" name="fname" placeholder="Your First Name" required autocomplete="given-name">
+                            </div>
+                            <div class="form-row">
+                                <input type="email" id="final-email" name="email" placeholder="Your Best Email" required autocomplete="email">
+                            </div>
+                            <button type="submit" class="cta-btn primary-cta" id="final-submit-btn">
+                                <span class="cta-text">🔓 UNLOCK INSTANT ACCESS + FREE BONUSES</span>
+                                <span class="cta-arrow">→</span>
+                            </button>
+                            <div class="form-trust">
+                                <span>🔒 100% Secure</span>
+                                <span class="trust-sep">•</span>
+                                <span>Zero Risk</span>
+                                <span class="trust-sep">•</span>
+                                <span>Instant Access</span>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-links">
-                <a href="../privacy.html" target="_blank">Privacy Policy</a> | 
-                <a href="../terms.html" target="_blank">Terms of Service</a> | 
-                <a href="../disclaimer.html" target="_blank">Earnings Disclaimer</a> | 
-                <a href="mailto:support@therapulse.store">Contact Us</a>
+                <a href="../privacy.html" target="_blank">Privacy Policy</a>
+                <a href="../terms.html" target="_blank">Terms of Service</a>
+                <a href="../disclaimer.html" target="_blank">Earnings Disclaimer</a>
+                <a href="mailto:support@therapulse.store">Contact</a>
             </div>
-            <p class="disclaimer">
-                Disclaimer: This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc. We do not guarantee any specific financial results from using the tools recommended on this page. Any income figures mentioned are strictly for illustrative purposes.
+            <p class="footer-disclaimer">
+                This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, this site is NOT endorsed by Facebook™ in any way.
+                FACEBOOK™ is a trademark of FACEBOOK™, Inc. Results vary. We do not guarantee specific financial outcomes from using the tools recommended on this page.
+                Any income figures shown are for illustrative purposes only.
             </p>
+            <p class="footer-copyright">© 2026 QuantCAI. All rights reserved. | Affiliate Disclosure: We may earn a commission if you purchase through our links.</p>
         </div>
     </footer>
+
+    <!-- ===== EXIT INTENT POPUP ===== -->
+    <div class="exit-overlay" id="exit-overlay" role="dialog" aria-modal="true" aria-label="Special offer before you leave">
+        <div class="exit-modal glass-card">
+            <button class="exit-close" id="exit-close" aria-label="Close popup">&times;</button>
+            <div class="exit-content">
+                <div class="exit-emoji">🎁</div>
+                <h2>Wait! Don't Leave Empty-Handed...</h2>
+                <p>Grab our <strong>FREE AI Automation Playbook</strong> + your exclusive <strong>$2 OFF coupon</strong> before you go.</p>
+                <form id="optin-form-exit" class="optin-form" autocomplete="on">
+                    <div class="form-row">
+                        <input type="email" id="exit-email" name="email" placeholder="Enter your email for free access..." required autocomplete="email">
+                    </div>
+                    <button type="submit" class="cta-btn primary-cta" id="exit-submit-btn">
+                        <span class="cta-text">📧 SEND ME THE FREE PLAYBOOK</span>
+                        <span class="cta-arrow">→</span>
+                    </button>
+                    <p class="exit-disclaimer">No spam. Unsubscribe anytime. We'll include your $2 coupon code.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== SOCIAL PROOF TOAST ===== -->
+    <div class="proof-toast" id="proof-toast" aria-live="polite">
+        <div class="proof-avatar" id="proof-avatar"></div>
+        <div class="proof-content">
+            <p class="proof-name" id="proof-name"></p>
+            <p class="proof-action" id="proof-action"></p>
+        </div>
+        <span class="proof-time">Just now</span>
+    </div>
+
+    <!-- ===== FLOATING MOBILE CTA ===== -->
+    <div class="floating-cta" id="floating-cta">
+        <button class="cta-btn primary-cta scroll-to-form" id="floating-btn">
+            🔓 UNLOCK ACCESS NOW
+        </button>
+    </div>
 
     <script src="script.js"></script>
 </body>
